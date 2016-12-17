@@ -1,0 +1,178 @@
+[
+    {
+        "Id": "d108fc8ad3bc6912d6f183a024cc181bea2031342525eb032a22c4a8a417533c",
+        "Created": "2016-12-14T23:39:12.644617312Z",
+        "Path": "/init",
+        "Args": [],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 21827,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2016-12-14T23:39:13.354863603Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:d25a7e48b176883f661e6b3482d3fabe97d8b43e1cfe772832d636ad8dc8485d",
+        "ResolvConfPath": "/var/lib/docker/containers/d108fc8ad3bc6912d6f183a024cc181bea2031342525eb032a22c4a8a417533c/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/d108fc8ad3bc6912d6f183a024cc181bea2031342525eb032a22c4a8a417533c/hostname",
+        "HostsPath": "/var/lib/docker/containers/d108fc8ad3bc6912d6f183a024cc181bea2031342525eb032a22c4a8a417533c/hosts",
+        "LogPath": "/var/lib/docker/containers/d108fc8ad3bc6912d6f183a024cc181bea2031342525eb032a22c4a8a417533c/d108fc8ad3bc6912d6f183a024cc181bea2031342525eb032a22c4a8a417533c-json.log",
+        "Name": "/s2",
+        "RestartCount": 0,
+        "Driver": "aufs",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "heig",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DiskQuota": 0,
+            "KernelMemory": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": -1,
+            "OomKillDisable": false,
+            "PidsLimit": 0,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0
+        },
+        "GraphDriver": {
+            "Name": "aufs",
+            "Data": null
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "d108fc8ad3bc",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "3000/tcp": {},
+                "7373/tcp": {},
+                "7946/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NODE_VERSION=0.12.2",
+                "NPM_VERSION=2.9.1",
+                "ROLE=backend"
+            ],
+            "Cmd": null,
+            "Image": "softengheigvd/webapp",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/init"
+            ],
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "06d1b35e8cc8d173b07451cc17fb0bbc98cfa99c3c44a3fd199bbabf3efce280",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "3000/tcp": null,
+                "7373/tcp": null,
+                "7946/tcp": null
+            },
+            "SandboxKey": "/var/run/docker/netns/06d1b35e8cc8",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "heig": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "d108fc8ad3bc"
+                    ],
+                    "NetworkID": "e82aae3327e1280075118e148f5e56f202a6eb853a8ef62baa44f9083b86fdab",
+                    "EndpointID": "803463d22275e147ff355c3008d30d7d5a8e2aeeda2ae9efa6622c6b22b3f744",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.4",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:12:00:04"
+                }
+            }
+        }
+    }
+]
