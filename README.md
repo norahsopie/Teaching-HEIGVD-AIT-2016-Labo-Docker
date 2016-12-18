@@ -133,14 +133,19 @@ The configuration files just give informations about the last container that has
  - After running s2: ``logs/task_5/haproxy_s2.cfg``
  - File containing output of ``docker ps``: ``logs/task_5/docker_ps``
  - File containing output of ``docker inspect``: ``logs/task_5/ha_inspect``, ``logs/task_5/s1_inspect``, ``logs/task_5/s2_inspect``
+ 
 #####2. List of files from the `/nodes` folder inside the `ha` container:
-  - File ``logs/task_5/list_of_nodes``
+  - File ``logs/task_5/list_of_nodes``    
+
 #####3. Configuration file after we stop s1:
- - File ``logs/task_5/ha_proxy_s1_stop``
+ - File ``logs/task_5/ha_proxy_s1_stop``  
+ 
 #####List of nodes:
  - File ``logs/task_5/nodes_s1_stop``
+
 #####File containing the ``docker ps`` output:
  - File ``logs/task_5/docker_ps_s1_stop``
+
 #### Task 6:
 **Delivrables**
 #####1. Screenshot of HAProxy stat page showing 3 nodes
@@ -148,16 +153,19 @@ The configuration files just give informations about the last container that has
 ![](assets/img/stat_page_3_n.JPG)
 
  - docker ps output file: ``logs/task_6/docker_ps_3_nodes_start``
+
 #####Screenshot of HAProxy stat page showing 5 nodes
 
 ![](assets/img/stat_page_5_n.JPG)
 
  - docker ps output file: ``logs/task_6/docker_ps_5_nodes_start``
+
 #####Screenshot of HAProxy stat page showing 2 nodes ``s1`` and ``s2`` removed
 
 ![](assets/img/stat_page_2_n_removed.JPG)
 
  - docker ps output file: ``logs/task_6/docker_ps_2_nodes_remove``
+
 ##### 2. Comments about the final solution:
 In this final solution, we have noticed that if we just have one back end node, the session id increment as we access and refresh the URL <http://192.168.42.42>. But if we have more than one node webb server, the session id doesn't increment, the requests are  forwarded to each node consecutivelly, but when the same request is forwarded again to the same node, its session id doesn't increment. And this is not normal. 
 ####Difficulties:
